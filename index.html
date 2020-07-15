@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="base.css">
+
+  <!-- Webフォント呼び出し -->
+  <!-- <script type="text/javascript"
+  src="//code.typesquare.com/static/5b0e3c4aee6847bda5a036abac1e024a/typesquare.js"
+  charset="utf-8"></script> -->
+</head>
+<body>
+
+  <header>
+    <div class="main-title">
+      <h1>Portfolio</h1>
+      <p class="dis-pc">コーディング・ライティング承ります</p>
+    </div>
+    <div class="space"></div>
+    <nav>
+      <a href="#" class="nav1">Home</a>
+      <a href="#about" class="nav2">About</a>
+      <a href="#skill" class="nav3">Skill</a>
+      <a href="#works" class="nav4">Works</a>
+      <a href="#contact" class="nav5">Contact</a></li>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="frame-1">
+      <h2>Closer and further away</h2>
+    </section>
+
+    <div class="frame-2">
+      <section class="content-about-area areas">
+        <div class="content-about">
+          <h2 class="content-title" id="about">─ About me ─</h2>
+          <div class="about-container">
+            <div class="about-item-l">
+              <p><img src="imgs/dummy_640.jpg" alt="ダミー画像"></p>
+            </div>
+            <div class="about-item-r">
+              <h3>輪足 美多代  （わたし・みたよ）</h3>
+              <div class="profile">
+                <p></p>
+                <p>兼業フリーランス 千葉県在住 197x年生まれ </p>
+                <p></p>
+                <p>独学でプログラミングを学ぶWebエンジニアです。<br>
+                  畑違いの法律業界からの転身ですが、前職時代と同様、
+                  様々なトラブルを解決して
+                  Webコンテンツが自走し活躍することがこの上ない喜びです。</p>
+                <p>HTML/CSSのコーディングやコンテンツ・ライティングを通じて
+                お客様のブランディング向上に貢献します。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-skill areas">
+        <h2 class="content-title" id="skill">─ Skill set ─</h2>
+        <div class="skill-container">
+          <div class="sp-container">
+            <div class="sp-left"><img src="imgs/html5_logo.png" alt="html5 logo"></div>
+            <div class="sp-right">
+              <h3>HTML</h3>
+              <p>
+                  見やすく、SEO対応を意識した丁寧なコーディングを心掛けます<br>
+                  レスポンシブ対応も可能です
+              </p>
+            </div>
+          </div>
+          <div class="sp-container">
+            <div class="sp-left"><img src="imgs/CSS3_logo.png" alt="css3 logo"></div>
+            <div class="sp-right">
+              <h3>CSS</h3>
+              <p>
+                ユーザビリティにこだわったスタイルを追求します
+              </p>
+            </div>
+          </div>
+          <div class="sp-container">
+            <div class="sp-left"><img src="imgs/JS_logo.png" alt="JavaScript logo"></div>
+            <div class="sp-right">
+              <h3>JavaScript</h3>
+              <p>
+                最新の技術を追求しつつ基本に立ち返ってセキュアなコーディングを心掛けます
+              </p>
+            </div>
+          </div>
+          <div class="sp-container">
+            <div class="sp-left"><img src="imgs/wrt.png" alt="pen logo"></div>
+            <div class="sp-right">
+              <h3>Writing</h3>
+              <p>
+                SEOと読み手の立場を意識した
+                執筆を得意としています<br>
+                ささやかですが個人ブログも運営しています
+                <a href="https://progress-ojin.com/" target="brank">My Blog</a>
+              </p>
+            </div>
+          </div>
+      </section>
+     
+      <section class="content-works areas">
+        <h2 class="content-title" id="works">─ Works ─</h2>
+        <span>
+          <img src="imgs/undermaintenance-sp.jpg" alt="under maintenance" class="dis-sp">
+          <img src="imgs/undermaintenance-pc.jpg" alt="under maintenance" class="dis-pc">
+        </span>
+      </section>
+
+     <section class="contact-form areas">
+       <h2 class="content-title" id="contact">─ Contact ─</h2>
+        <form class="" id="form"
+       action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePBVceXNymLHqJbNlDPPKFX4aH_SW4Qa3JVRTusn7bJ8Fevg/formResponse" method="POST">
+         <input type="mail" name="emailAddress" id="mail" placeholder="メールアドレス" required><br>
+         <textarea name="entry.111547511" rows="10" cols="24" placeholder="お問い合わせ内容を入力してください。" required class="text_area"></textarea><br>
+         <input type="submit" class="submit-btn" value="送 信">
+         <p></p>
+      </form>
+      <p class="end_message">お問い合わせありがとうございました。確認後、返信させていただきます。</p>
+      <p class="false_message">送信失敗です。</p>
+     </section>
+  </div>
+
+</main>
+</body>
+
+    <footer>
+      <p>(C)2020/progress-ojin.com/All Right Reserved</p>
+  </footer>
+</html>
+
+<!----- Contact ==> GoogleForm 連携 ----->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+  $('#form').submit(function (event) {
+  var formData = $('#form').serialize();
+  $.ajax({
+    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSePBVceXNymLHqJbNlDPPKFX4aH_SW4Qa3JVRTusn7bJ8Fevg/formResponse",
+    data: formData,
+    type: "POST",
+    dataType: "xml",
+    statusCode: {
+      0: function () {
+        $(".end_message").slideDown();
+        $(".submit-btn").fadeOut();
+      },
+      200: function () {
+        $(".false_message").slideDown();
+      }
+    }
+  });
+  event.preventDefault();
+});
+
+});
+</script>

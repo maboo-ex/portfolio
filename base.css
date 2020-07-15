@@ -1,0 +1,270 @@
+* {
+  font-family: 'ヒラギノ角ゴ W6', 'ヒラギノ角ゴ ProN W6', YuGothic, 'Yu Gothic',  'Helvetica Neue', Verdana, Roboto, sans-serif;
+  box-sizing: border-box;
+}
+@media (max-width: 834px) {
+  * {font-size: 62.5%; }
+  .dis-pc { display: none;}
+  .dis-sp { display: block;} 
+}
+@media (min-width: 835px) {
+  * {font-size: 75%; }
+  .dis-pc { display: block;} 
+  .dis-sp { display: none;}
+}
+p { font-size: 1.6rem;}
+a { text-decoration: none;}
+li { list-style: none;}
+img { max-width: 100%;}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+  background: rgba(80,57,57,0.35);
+  color: rgb(166, 178, 231);
+  text-shadow: 3px 2px 3px #949ef5;
+  position: fixed;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+}
+
+nav {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: rgb(166, 178, 231);
+  text-shadow: 3px 2px 3px #949ef5;
+}
+
+@media (min-width: 835px) {
+  header {
+    display: flex;
+  }
+  .main-title {
+    line-height: 1;
+    padding: 20px 0 10px;
+    height: auto;
+    flex: 1 1 300px;
+  }
+
+  .space {
+    flex: 2 2 200px;
+  }
+
+  header p {
+    margin: 0;
+    font-size:1.2rem;
+    text-align: center;
+  }
+
+  nav {
+    min-width: 500px; max-width: 600px;
+    margin-right: 5%; 
+    flex: 2 2 500px;
+    align-items: flex-end;
+  }
+}
+
+.frame-1 {
+  margin-top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('imgs/nature-3108066_1920.jpg') top center / cover no-repeat;
+}
+
+.frame-1 h2 {
+  font-family: 'シネマレター', 'Helvetica Neue', Verdana, Roboto, sans-serif;
+  font-size: 2.6rem;
+  color: rgb(223, 240, 240);
+  animation: fadein 12s ease infinite;
+}
+
+@keyframes fadein {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+.frame-2 {
+  background: url('imgs/typewriter-2653187_1920.jpg') top center / cover no-repeat;
+  background-attachment: fixed;
+}
+
+.frame-2::before {
+  background: inherit;
+  content: '';
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+}
+
+.areas {
+  background: rgba(80,57,57,0.45);
+  color: white;
+  padding: 30px 0;
+}
+
+.content-about {
+  max-width: 755px;
+  margin: 0 40px;
+}
+
+.content-title {
+  font-size: 2.8rem;
+  font-family: 'A1明朝', serif;
+  padding-top: 30px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.content-about img {
+  text-align: center;
+  max-width: 220px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.about-item-l p {
+  text-align: center;
+}
+
+.content-about h3 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media (min-width:835px) {
+  .content-about {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .about-container {
+    display: flex;
+  }
+  .about-item-r {
+    margin-left: 10%;
+  }
+}
+
+.content-skill {
+  height: auto;
+  margin: 0;
+}
+
+@media (max-width:834px) {
+  .sp-container {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+  }
+  .sp-left {flex:1;}
+  .sp-right {flex:3;}
+} 
+
+@media (min-width:835px) {
+  .skill-container {
+    display: flex;
+  }
+  .sp-container {
+    flex: 1;
+    margin: 30px 20px 0;
+  }
+  .sp-left , .sp-right h3 {
+    text-align: center;
+  }
+}
+
+.sp-container h3 {
+  font-size: 1.8rem;
+  font-family: 'A1明朝', serif;
+  font-weight: bold;
+}
+
+.sp-right a {
+  padding: 6px; 
+  border-radius: 15%;
+  background: rgb(17, 173, 235);
+  color: white;
+}
+
+.content-works span {
+  display: flex; justify-content: center; align-items: center;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+input[type=mail], input[type=submit] {
+  font-size: 1.6rem;
+}
+
+#mail {
+  width: 90%; min-width:300px; max-width:500px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.text_area {
+  margin-top: 30px;
+  width: 90%; min-width:300px; max-width:500px;
+  height: 200px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-family: 'ヒラギノ角ゴ W6', 'ヒラギノ角ゴ ProN W6', YuGothic, 'Yu Gothic',  'Helvetica Neue', Verdana, Roboto, sans-serif;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+
+.submit-btn + p {
+  margin:0;
+  padding-bottom: 20px;
+}
+
+.end_message , .false_message {
+  display: none;
+  height: auto;
+}
+
+footer {
+  height: 60px;
+  background: rgb(66, 66, 92);
+  color: rgb(166, 178, 231);
+  font-size: 15rem;
+  font-style: italic;
+}
+
+footer p {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+
+
+
+
